@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gran Gran's Famous Cookie Shop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<center>
+	<%= link_to "Cookie Shop Home", home_path %> • 
+	<%= link_to "Gran Gran's Story", about_path %> • 
+	<%= link_to "Gran Gran's Famous Cookies", product_path %> • 
+	<%= link_to "Cookieriffic Blog", blog_path %>
+	<p></p>
+	<center>
+</header>
+
+<!-- Displays normal info -->
+<%= yield %>
+
+</body>
+</html>

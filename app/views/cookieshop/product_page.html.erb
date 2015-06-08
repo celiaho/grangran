@@ -1,0 +1,17 @@
+This is Gran Gran's product page
+
+<br>
+<br>
+
+<% @products.each do |product, attributes| %>
+
+	<h3><%= product %></h3>
+	<ul>
+		<% attributes[:ingredients].each do |attribute| %>
+
+		<li><%= attribute %></li>
+
+		<% end %>
+	</ul>
+
+<% end %>
